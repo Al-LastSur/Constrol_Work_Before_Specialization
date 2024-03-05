@@ -49,8 +49,8 @@ string[] CreateFinalArray(string[] stringsArray)
 
 // beforegiven examples arrays - uncomment only one line below
 // string [] stringsArray = {"Hello", "2", "world", ":-)"}; // alternatively
-string [] stringsArray = {"1234", "1567", "-2", "computer science"}; // alternatively
-// string [] stringsArray = {"Russia", "Denmark", "Kazan"};// alternatively
+// string [] stringsArray = {"1234", "1567", "-2", "computer science"}; // alternatively
+string [] stringsArray = {"Russia", "Denmark", "Kazan"};// alternatively
 
 // alternatively create array filled via console
 

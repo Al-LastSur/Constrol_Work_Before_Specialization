@@ -45,7 +45,9 @@ Introduced array of string type. Alternatevely the array might be read from cons
 ## The Solution process
 
 1. Calculate the amount of symbols of each element of initial array
+>Comment : CalculateStringLength method applied successfully. The program identifies the amount of symbols in each element of string array
 2. identify if the element has less or equal to 3 elements in itself
+> Comment: alculateSizeFinalArray method identifies the amount of elemens in an array corresponding to the condition of 3 or less symbols in it and returns the amount of such elements in the array
 3. Create a new empty array
 4. Copy the content of the initial element to new array element
 5. Print array to console

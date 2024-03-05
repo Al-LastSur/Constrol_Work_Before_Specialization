@@ -1,4 +1,8 @@
+# Final Quiz after Introductory Course to IT
+>The information down below is given in Russian and translated into English as the part of Task for Showing the skills obtained during the Course.
+
 Copied from task page at GB:
+
 Данная работа необходима для проверки ваших знаний и навыков по итогу прохождения первого блока обучения на программе Разработчик. Мы должны убедится, что базовое знакомство с IT прошло успешно.
 
 Задача алгоритмически не самая сложная, однако для полноценного выполнения проверочной работы необходимо:
@@ -12,15 +16,20 @@ Copied from task page at GB:
 Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк, длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
 Примеры:
+
 [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
+
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
+
 [“Russia”, “Denmark”, “Kazan”] → []
-The abovementioned was translated into English:
+
+>The abovementioned was translated into English:
+
 The Task is necessary for checking your knowledge and skills on the results oа passing through the first step in education on the programme Developper. We have to check that your basic knowledge of IT has been successful.
 The Task is algorithmically is not so diffiluct, however for total слусл-up of the executed work it is necessary:
 1. To create a repo at GitHub
 2. to draw block-chain of the algorithm (it's allowed to describe block-chain of the basic content part, if you place it as a eparate method)
-3. Top attach the repo with formulated text description of the Task (README.md file)
+3. To attach the repo with formulated text description of the Task (README.md file)
 4. To write the code solving the task being set.
 5. Use version control during your work on the project (all the job shouldn't be executed in one commit, as minimum the stages 2,3,and 4 must be allocated inside the different commits)
 

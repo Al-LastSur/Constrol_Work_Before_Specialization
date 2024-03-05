@@ -36,3 +36,20 @@ Write down the code which will form up a new array out of the existing array of 
 
     * Status : in progress
 
+# Possible Task Solution is brief explanation
+
+## What do we have at the beginning?
+
+Introduced array of string type. Alternatevely the array might be read from console.
+
+## The Solution process
+
+1. Calculate the amount of symbols of each element of initial array
+2. identify if the element has less or equal to 3 elements in itself
+3. Create a new empty array
+4. Copy the content of the initial element to new array element
+5. Print array to console
+
+## What do we have at the  End?
+
+The array formed of the elements of initial array corresponding to the Task requirements.

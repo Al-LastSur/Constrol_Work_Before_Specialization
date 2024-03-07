@@ -1,25 +1,24 @@
 ﻿//the list of methods used
 
-void StringLengths(string[] stringsArray) // working successfully
-    {
-        // Pick each element separately
-        int size = 0;
-        foreach (string str in stringsArray)
-        {
-            // Identify the amount of symbols inside of element
-            int length = str.Length;
-            if (length <= 3)
-            {
-               size++;
-            }
-            // Выводим результат
-            Console.WriteLine($"Строка \"{str}\" содержит {length} символов.");
-        }
-    }
+// // optional method to identify the amount of symbols in each element
+// void StringLengths(string[] stringsArray) // working successfully
+//     {
+//         // Pick each element separately
+//         int size = 0;
+//         foreach (string str in stringsArray)
+//         {
+//             // Identify the amount of symbols inside of element
+//             int length = str.Length;
+//             if (length <= 3)
+//             {
+//                size++;
+//             }
+//         Console.WriteLine($"Строка \"{str}\" содержит {length} символов.");
+//         }
+//     }
 
-int CalculateSizeOfFinalArray (string[] stringsArray) // working successfully
+int SizeOfFinalArray (string[] stringsArray) // method to identify the amount of elements corresponding the requirements at the existing array
     {
-        // Pick each element separately
         int size = 0;
         foreach (string str in stringsArray)
         {
@@ -33,12 +32,13 @@ int CalculateSizeOfFinalArray (string[] stringsArray) // working successfully
         return size;
     }
 
-
-void PrintFinalArray (string[] stringsArray)
+string[] FinalArray (string[] stringsArray) // to form up new array of elements of initial array corresponding to the specified requirements
     {
-        // Pick each element separately
-        string[] Result = new string[CalculateSizeOfFinalArray(stringsArray)];
+        
+        string[] Result = new string[SizeOfFinalArray(stringsArray)];
+
             int index = 0;
+// Pick each element separately
         foreach (string str in stringsArray)
         {
             // Identify the amount of symbols inside of element
@@ -48,31 +48,33 @@ void PrintFinalArray (string[] stringsArray)
                Result[index] = str;
                index++;
             }
-            // for (index = 0; index < CalculateSizeOfFinalArray(stringsArray); index++)
-            // {
-
-            //         Result[index] = str;
-            // }
         }
-        Console.WriteLine($"Новый массив: [ {string.Join(", ", Result)} ]");
+        return Result;
     }
 
-
-
+void PrintFinalArray (string[] stringsArray) // separated output from FinalArray method
+{
+    Console.WriteLine($"Итоговый Массив соответствующий заданию: [ {string.Join(", ", FinalArray(stringsArray))} ]");
+}
 
 
 // Solution below
 
-// beforegiven examples arrays - uncomment only one line below
+//Choose alternatives to check solution
+
+// beforegiven examples arrays - uncomment only one line below at once
 // string [] stringsArray = {"Hello", "2", "world", ":-)"}; // alternatively
 // string [] stringsArray = {"1234", "1567", "-2", "computer science"}; // alternatively
-string [] stringsArray = {"1234", "1567", "67", "15", "156","-2", "computer science"}; // alternatively
-// string [] stringsArray = {"Russia", "Denmark", "Kazan"};// alternatively
+// string [] stringsArray = {"1234", "1567", "67", "15", "156","-2", "computer science"}; // alternatively
+string [] stringsArray = {"Russia", "Denmark", "Kazan"};// alternatively
 
 // alternatively create array filled via console
 
- // Вызываем метод для определения количества символов в каждом элементе массива
-StringLengths(stringsArray);
-Console.WriteLine($"Новый массив содежит {CalculateSizeOfFinalArray(stringsArray)} элементов.");
+// Optional output results
+
+// StringLengths(stringsArray); // uncomment to see all the elements and amount of symbols in them
+// Console.WriteLine($"Новый массив содежит {SizeOfFinalArray(stringsArray)} элементов."); // uncomment to see amount of elements inside new array
+
+// Final output result
 PrintFinalArray(stringsArray);
 

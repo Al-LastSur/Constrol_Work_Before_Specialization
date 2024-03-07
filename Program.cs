@@ -17,6 +17,9 @@
 //         }
 //     }
 
+using System.Transactions;
+using System.Xml.XPath;
+
 int SizeOfFinalArray (string[] stringsArray) // method to identify the amount of elements corresponding the requirements at the existing array
     {
         int size = 0;
@@ -57,6 +60,26 @@ void PrintFinalArray (string[] stringsArray) // separated output from FinalArray
     Console.WriteLine($"Итоговый Массив соответствующий заданию: [ {string.Join(", ", FinalArray(stringsArray))} ]");
 }
 
+string[] InputStringArray (int size, string[] result = null, int currentIndex = 0)
+{
+if (result == null) // for not to create new array every time
+    {
+       result = new string[size]; 
+    }
+
+if (currentIndex < size)
+{
+result [currentIndex] = Console.ReadLine();
+   return InputStringArray (size, result, currentIndex + 1);
+}
+else
+    {
+        return result;
+    } 
+
+}
+
+
 
 // Solution below
 
@@ -66,9 +89,15 @@ void PrintFinalArray (string[] stringsArray) // separated output from FinalArray
 // string [] stringsArray = {"Hello", "2", "world", ":-)"}; // alternatively
 // string [] stringsArray = {"1234", "1567", "-2", "computer science"}; // alternatively
 // string [] stringsArray = {"1234", "1567", "67", "15", "156","-2", "computer science"}; // alternatively
-string [] stringsArray = {"Russia", "Denmark", "Kazan"};// alternatively
+// string [] stringsArray = {"Russia", "Denmark", "Kazan"};// alternatively
+string [] stringsArray = {" ", "11!", "пос", "weter", "jam"}; // strange coincidence - when input from keyboard the same symbols the out put is [  , 11!, , 12 ] - why spacebar two times?
 
 // alternatively create array filled via console
+
+Console.Write("Введите количетсво элементов строкового массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
+string[] stringsArray = InputStringArray (size);
+
 
 // Optional output results
 

@@ -92,6 +92,7 @@ else
 
 // alternatively create array filled via console
 
+    Console.WriteLine("Не вводите элементы на русском языке - система кодировки выдаст пустые значения");
     Console.Write("Введите количетсво элементов строкового массива: ");
     int size = Convert.ToInt32(Console.ReadLine());
     string[] stringsArray = InputStringArray (size);

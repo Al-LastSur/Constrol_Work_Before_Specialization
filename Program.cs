@@ -17,8 +17,7 @@
 //         }
 //     }
 
-using System.Transactions;
-using System.Xml.XPath;
+
 
 int SizeOfFinalArray (string[] stringsArray) // method to identify the amount of elements corresponding the requirements at the existing array
     {
@@ -37,10 +36,8 @@ int SizeOfFinalArray (string[] stringsArray) // method to identify the amount of
 
 string[] FinalArray (string[] stringsArray) // to form up new array of elements of initial array corresponding to the specified requirements
     {
-        
         string[] Result = new string[SizeOfFinalArray(stringsArray)];
-
-            int index = 0;
+        int index = 0;
 // Pick each element separately
         foreach (string str in stringsArray)
         {
@@ -69,12 +66,12 @@ if (result == null) // for not to create new array every time
 
 if (currentIndex < size)
 {
-result [currentIndex] = Console.ReadLine();
+    result [currentIndex] = Console.ReadLine();
    return InputStringArray (size, result, currentIndex + 1);
 }
 else
     {
-        return result;
+    return result;
     } 
 
 }
@@ -85,19 +82,19 @@ else
 
 //Choose alternatives to check solution
 
+
 // beforegiven examples arrays - uncomment only one line below at once
 // string [] stringsArray = {"Hello", "2", "world", ":-)"}; // alternatively
 // string [] stringsArray = {"1234", "1567", "-2", "computer science"}; // alternatively
 // string [] stringsArray = {"1234", "1567", "67", "15", "156","-2", "computer science"}; // alternatively
 // string [] stringsArray = {"Russia", "Denmark", "Kazan"};// alternatively
-string [] stringsArray = {" ", "11!", "пос", "weter", "jam"}; // strange coincidence - when input from keyboard the same symbols the out put is [  , 11!, , 12 ] - why spacebar two times?
+// string [] stringsArray = {" ", "11!", "пос", "weter", "jam"}; // strange coincidence - when input from keyboard the same symbols the out put is [  , 11!, , 12 ] - why spacebar two times and no "пос"?
 
 // alternatively create array filled via console
 
-Console.Write("Введите количетсво элементов строкового массива: ");
-int size = Convert.ToInt32(Console.ReadLine());
-string[] stringsArray = InputStringArray (size);
-
+    Console.Write("Введите количетсво элементов строкового массива: ");
+    int size = Convert.ToInt32(Console.ReadLine());
+    string[] stringsArray = InputStringArray (size);
 
 // Optional output results
 
@@ -105,5 +102,7 @@ string[] stringsArray = InputStringArray (size);
 // Console.WriteLine($"Новый массив содежит {SizeOfFinalArray(stringsArray)} элементов."); // uncomment to see amount of elements inside new array
 
 // Final output result
+
 PrintFinalArray(stringsArray);
+//helloworld
 

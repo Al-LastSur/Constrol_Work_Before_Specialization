@@ -34,7 +34,8 @@ Write down the code which will form up a new array out of the existing array of 
 
 * Write README.md file to the project describing all the stages of the task
 
-    * Status : in progress
+    * Status : Done on 08/03/24
+    >Comment: File is filled in with picture and information on status throughout the whole process
 
 * Use version control to track the progress of the task
 

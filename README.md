@@ -22,7 +22,11 @@ Write down the code which will form up a new array out of the existing array of 
 
 * Draw a block-chain on the project
 
-    * Status : In progrress
+    * Status : Done on 08/03/24
+    >Comment:Blockchain contains main principles to do the task
+
+![Block-chain](Block-Chain_Quiz.png)
+
 
 * Write down the code for solving the Task
     

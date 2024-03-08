@@ -3,7 +3,7 @@
 
 Copied from task page at GB:
 
-![alt text](Screenshot-TaskRU.png)
+![task description](Screenshot-TaskRU.png)
 
 >The abovementioned was translated into English:
 

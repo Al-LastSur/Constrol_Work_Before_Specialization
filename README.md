@@ -26,7 +26,7 @@ Write down the code which will form up a new array out of the existing array of 
 
 * Write down the code for solving the Task
     
-    * Status : In progress
+    * Status : Done on 08/03/24 
 
 * Write README.md file to the project describing all the stages of the task
 
@@ -34,9 +34,9 @@ Write down the code which will form up a new array out of the existing array of 
 
 * Use version control to track the progress of the task
 
-    * Status : in progress
+    * Status : Done throughout the project.
 
-# Possible Task Solution is brief explanation
+# Possible Task Solution in brief explanation
 
 ## What do we have at the beginning?
 
@@ -48,10 +48,18 @@ Introduced array of string type. Alternatevely the array might be read from cons
 >Comment : CalculateStringLength method applied successfully. The program identifies the amount of symbols in each element of string array
 2. identify if the element has less or equal to 3 elements in itself
 > Comment: alculateSizeFinalArray method identifies the amount of elemens in an array corresponding to the condition of 3 or less symbols in it and returns the amount of such elements in the array
-3. Create a new empty array
-4. Copy the content of the initial element to new array element
-5. Print array to console
+3. Check the existing array for the conditions into add to the new array
+>Comment: steps 3 and 4 included at the same method, but the length of new array is determined separately.
+4. Create a new empty array
+>Comment: the recursion was used to fill in the result array with elements.
+5. Copy the content of the initial element to new array element
+>Comment: 
+6. Print resulting array to console 
+>Comment: the program is giving several types to check the result
+* Uncomment one of the given lines at a time;
+* Uncomment the block with option where you input the elemntsfrom console (input the amount of elements first, and each element then).
+>(Warning! The coding system 1251 couldn't support Russial letters when they are read from the console)
 
-## What do we have at the  End?
+## What do we have at the End?
 
 The array formed of the elements of initial array corresponding to the Task requirements.

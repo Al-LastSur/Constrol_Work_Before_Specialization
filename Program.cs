@@ -101,8 +101,8 @@ else
 // StringLengths(stringsArray); // uncomment to see all the elements and amount of symbols in them
 // Console.WriteLine($"Новый массив содежит {SizeOfFinalArray(stringsArray)} элементов."); // uncomment to see amount of elements inside new array
 
-// Final output result
+// Final output  result
 
 PrintFinalArray(stringsArray);
-//helloworld
+
 
